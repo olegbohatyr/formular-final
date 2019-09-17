@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Широкоформат</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.min.css">
+	<link rel="stylesheet" href="css/datepicker.min.css">
+</head>
+<body>
+	<div class="form">
+		<div class="header">
+			<div class="header-title">формуляр строки №</div>
+			<div class="header-num">03</div>
+			<button class="button">сохранить формуляр</button>
+		</div>
+		<div class="main">
+			<div class="main-header">
+				<div class="main-header__num">03</div>
+				<div class="main-header__title">ШФ (Широкоформат)</div>
+				<button class="main-header__button button">прайс</button>
+			</div>
+			<div class="main-aside">
+				<div class="main-top">
+					<div class="row">
+						<div class="field field--black offset-bottom">плакат</div>
+						<input type="text" class="field offset-bottom" placeholder="формат готового" name="#">
+						<input type="text" class="field offset-bottom col-4" placeholder="ориг" name="#">
+						<input type="text" class="field offset-bottom col-5" placeholder="тираж ор." name="#">
+					</div>
+					<div class="selects">
+						<div class="select offset-bottom col-5">
+							<select name="#">
+								<option value="цветн" selected disabled hidden>цветн</option>
+								<option value="4">4+0</option>
+								<option value="5">без печати</option>
+							</select>
+						</div>
+						<div class="select offset-bottom col-10">
+							 <select name="#">
+						        <option value="#" selected disabled hidden>материал осн.</option>
+						        <option value="#">бум 150</option>
+						        <option value="#">бум 200</option>
+						        <option value="#">скл</option>
+						        <option value="#">бэклит</option>
+						        <option value="#">баннер</option>
+						        <option value="#">хост бот.</option>
+						        <option value="#">холст кит.</option>
+						        <option value="#">VIP1</option> 
+						        <option value="#">VIP2</option>
+						        <option value="#">VIP3</option>
+						        <option value="#">скл Epson</option>
+						        <option value="#">200 Epson</option>
+						        <option value="#">80 гр Epson</option> 
+						    </select>
+						</div>
+					</div>
+					<div class="checkboxes">
+						<div class="offset-bottom label group">
+							<input type="checkbox" name="#" class="checkbox">
+							<input type="text" name="#" placeholder="люверс шаг мм" class="field col-8">
+						</div>
+						<div class="offset-bottom group">
+							<label class="label col-6">
+								<input type="checkbox" name="#" class="checkbox">
+								П-резка
+							</label>
+							<label class="label col-6">
+								<input type="checkbox" name="#" class="checkbox">
+								Р-резка
+							</label>
+						</div>
+						<label class="offset-bottom label">
+							<input type="checkbox" name="#" class="checkbox">
+							закупка
+						</label>
+						<label class="offset-bottom label">
+							<input type="checkbox" name="#" class="checkbox">
+							подвороты
+						</label>
+					</div>
+				</div>
+				<div class="main-middle">
+					<div class="content-middle-top border-bottom">
+						<div class="arh group group-center">
+							<input type="text" class="field col-1">
+							<input type="text" class="field col-1">
+							<span>-</span>	
+							<input type="text" class="field col-1">
+							<input type="text" class="field col-1">
+							<span>арх.артк</span>
+						</div>
+					</div>
+					<div class="content-middle-bottom group group-center">
+						<div class="col-5 date-title">вход</div>
+						<div class="col-5 date-title">выход</div>
+					</div>
+				</div>
+				<div class="main-bottom group">
+					<div class="col">
+						<div class="sign-title field field--black offset-bottom">дата</div>
+						<div class="sign-title field field--black offset-bottom">время</div>
+					</div>
+					<div class="col">
+						<input type="text" placeholder="дата" class="datepicker-here sign-title field offset-bottom" data-date-format="dd/mm" data-position="bottom left">
+						<input type="text" class="timepicker sign-title field offset-bottom" placeholder="время" name="time">
+					</div>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="main-top">
+					<textarea name="description" class="textarea" placeholder="примечания"></textarea>
+					<div class="fields">
+						<input type="text" name="vip__field-1" value="vip1:" class="field">
+						<input type="text" name="vip__field-2" value="vip2:" class="field">
+						<input type="text" name="vip__field-3" value="vip3:" class="field">
+					</div>
+				</div>
+				<div class="main-middle">
+					<div class="content-middle-top row">
+						<div class="col">
+							<input type="text" name="price__vip-1" placeholder="цена VIP1" class="field offset-bottom">
+							<input type="text" name="price__vip-2" placeholder="цена VIP2" class="field offset-bottom">
+							<input type="text" name="price__vip-3" placeholder="цена VIP3" class="field offset-bottom">
+						</div>
+						<div class="col">
+							<input type="text" name="price__sep-1" class="field offset-bottom" placeholder="% сепар.">
+							<input type="text" name="price__sep-2" class="field offset-bottom" placeholder="% сепар.">
+							<input type="text" name="price__sep-3" class="field offset-bottom" placeholder="% сепар.">
+						</div>
+					</div>
+					<div class="content-middle-bottom row">
+						<div class="col"><button class="button field">ошибка!</button></div>
+						<div class="col"><input type="text" name="#" placeholder="0.00" class="field offset-bottom"></div>
+					</div>
+				</div>
+				<div class="main-bottom row">
+					<div class="buttons">
+						<button class="button button--orange">начал</button>
+						<button class="button button--green">сдал</button>
+					</div>
+					<div class="info">
+						<div class="info-title">фактич.</div>
+						<div class="info-item">дата</div>
+						<div class="info-item">время</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

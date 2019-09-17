@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Постпечать</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.min.css">
+	<link rel="stylesheet" href="css/datepicker.min.css">
+</head>
+<body>
+	<div class="form">
+		<div class="header">
+			<div class="header-title">формуляр строки №</div>
+			<div class="header-num">03</div>
+			<button class="button">сохранить формуляр</button>
+		</div>
+		<div class="main">
+			<div class="main-header">
+				<div class="main-header__num">03</div>
+				<div class="main-header__title">ПП (Постпечать)</div>
+				<button class="main-header__button button">прайс</button>
+			</div>
+			<div class="main-aside">
+				<div class="main-top">
+					<div class="row">
+						<div class="field field--black offset-bottom">меню</div>
+						<div class="select offset-bottom col-10">
+							<select name="#">
+								<option value="#" selected disabled hidden>обработка1</option>
+								<option value="#">резка</option>
+								<option value="#">накатка</option>
+								<option value="#">снятие облоя</option>
+								<option value="#">облой+монт</option>
+								<option value="#">кашировка</option>
+								<option value="#">вырубка</option>
+								<option value="#">значки</option>
+								<option value="#">магнит</option>
+								<option value="#">люверс</option>
+								<option value="#">хольнитен</option>
+								<option value="#">иное</option>
+							</select>
+						</div>
+						<div class="select offset-bottom col-10">
+							<select name="#">
+								<option value="#" selected disabled hidden>обработка2</option>
+								<option value="#">резка</option>
+								<option value="#">накатка</option>
+								<option value="#">снятие облоя</option>
+								<option value="#">облой+монт</option>
+								<option value="#">кашировка</option>
+								<option value="#">вырубка</option>
+								<option value="#">значки</option>
+								<option value="#">магнит</option>
+								<option value="#">люверс</option>
+								<option value="#">хольнитен</option>
+								<option value="#">иное</option>
+							</select>
+						</div>
+						<div class="select offset-bottom col-10">
+							<select name="#">
+								<option value="#" selected disabled hidden>обработка3</option>
+								<option value="#">резка</option>
+								<option value="#">накатка</option>
+								<option value="#">снятие облоя</option>
+								<option value="#">облой+монт</option>
+								<option value="#">кашировка</option>
+								<option value="#">вырубка</option>
+								<option value="#">значки</option>
+								<option value="#">магнит</option>
+								<option value="#">люверс</option>
+								<option value="#">хольнитен</option>
+								<option value="#">иное</option>
+							</select>
+						</div>
+					</div>
+				<fieldset class="fieldset fieldset--light fieldset--border-white offset-bottom">
+					<input type="text" name="#" class="field offset-bottom" placeholder="формат гот. мм">
+					<div class="select offset-bottom col-6 ml-4">
+						<select name="#">
+							<option value="#" selected disabled hidden>ориент.</option>
+							<option value="#">верт</option>
+							<option value="#">гориз</option>
+						</select>
+					</div>
+					<div class="group offset-bottom">
+						<input type="text" class="field col-4" placeholder="ориг" name="#">
+						<input type="text" class="field col-5" placeholder="тираж ор." name="#">
+					</div>
+				</fieldset>
+				<fieldset class="fieldset fieldset--light offset-bottom">
+					<div class="fieldset-title">для одностраничного:</div>
+					<div class="col-10">
+						<label class="label group align-center col-10">
+							<span class="col-3">цветн</span>
+							<div class="select offset-bottom col-10">
+								<select name="#">
+									<option value="#" selected disabled hidden>цвтн.осн</option>
+									<option value="#">4+0</option>
+									<option value="#">4+4</option>
+									<option value="#">1+0</option>
+									<option value="#">1+1</option>
+									<option value="#">без п.</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-6">материал</span>
+							<div class="select offset-bottom col-5">
+								<select name="#">
+									<option value="#" selected disabled hidden>мат.</option>
+									<option value="#">vip1</option>
+									<option value="#">vip2</option>
+									<option value="#">vip3</option>
+									<option value="#">vip4</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-6">лам.тип</span>
+							<div class="select offset-bottom col-8">
+								<select name="#">
+									<option value="#" selected disabled hidden>лам.тп</option>
+									<option value="#">глян.</option>
+									<option value="#">мат</option>
+									<option value="#">тач</option>
+									<option value="#">иная</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-6">ламп.тлщ</span>
+							<div class="select offset-bottom col-10">
+								<select name="#">
+									<option value="#" selected disabled hidden>лам.тлщ</option>
+									<option value="#">30 рл</option>
+									<option value="#">75 рл</option>
+									<option value="#">100 пк</option>
+									<option value="#">125 рл</option>
+									<option value="#">175 пк</option>
+									<option value="#">250 рл</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-6">биг/флс</span>
+							<div class="select offset-bottom col-10">
+								<select name="#">
+									<option value="#" selected disabled hidden>биг/флс</option>
+									<option value="#">Ф</option>
+									<option value="#">Б</option>
+									<option value="#">БФ</option>
+									<option value="#">2Ф</option>
+									<option value="#">3Ф</option>
+									<option value="#">2БФ</option>
+									<option value="#">3БФ</option>
+									<option value="#">иное</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-3">брш</span>
+							<div class="select offset-bottom col-10">
+								<select name="#">
+									<option value="#" selected disabled hidden>брошюрк</option>
+									<option value="#">скрепка</option>
+									<option value="#">фр.скрепка</option>
+									<option value="#">ткл</option>
+									<option value="#">ткл м.обл</option>
+									<option value="#">ткл тв.обл</option>
+									<option value="#">пл.пруж</option>
+									<option value="#">мет.пруж</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-3">тисн</span>
+							<div class="select offset-bottom col-10">
+								<select name="#">
+									<option value="#" selected disabled hidden>тиснение</option>
+									<option value="#">сер.мат</option>
+									<option value="#">сер. гл.</option>
+									<option value="#">зол.мат.</option>
+									<option value="#">зол.гл</option>
+									<option value="#">полоса д/п</option>
+									<option value="#">иное</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-5">резка</span>
+							<div class="select offset-bottom col-8">
+								<select name="#">
+									<option value="#" selected disabled hidden>резка</option>
+									<option value="#">пп</option>
+									<option value="#">лазер</option>
+									<option value="#">гравер</option>
+									<option value="#">вырубка</option>
+									<option value="#">без резки</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-10">скругл. угл</span>
+							<div class="select offset-bottom col-8">
+								<select name="#">
+									<option value="#" selected disabled hidden>скр.ул</option>
+									<option value="#">да</option>
+									<option value="#">нет</option>
+								</select>
+							</div>
+						</label>
+					</div>
+				</fieldset>
+				<fieldset class="fieldset fieldset--dark offset-bottom">
+					<div class="fieldset-title">для многостраничного:</div>
+					<div class="col-10">
+						<label class="label group align-center col-10">
+							<span class="col-3">цветн</span>
+							<div class="select offset-bottom col-10">
+								<select name="#">
+									<option value="#" selected disabled hidden>цвтн.осн</option>
+									<option value="#">4+0</option>
+									<option value="#">4+4</option>
+									<option value="#">1+0</option>
+									<option value="#">1+1</option>
+									<option value="#">без п.</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-6">материал</span>
+							<div class="select offset-bottom col-5">
+								<select name="#">
+									<option value="#" selected disabled hidden>мат.</option>
+									<option value="#">vip1</option>
+									<option value="#">vip2</option>
+									<option value="#">vip3</option>
+									<option value="#">vip4</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-6">лам.тип</span>
+							<div class="select offset-bottom col-8">
+								<select name="#">
+									<option value="#" selected disabled hidden>лам.тп</option>
+									<option value="#">глян.</option>
+									<option value="#">мат</option>
+									<option value="#">тач</option>
+									<option value="#">иная</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-6">ламп.тлщ</span>
+							<div class="select offset-bottom col-10">
+								<select name="#">
+									<option value="#" selected disabled hidden>лам.тлщ</option>
+									<option value="#">30 рл</option>
+									<option value="#">75 рл</option>
+									<option value="#">100 пк</option>
+									<option value="#">125 рл</option>
+									<option value="#">175 пк</option>
+									<option value="#">250 рл</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-6">биг/флс</span>
+							<div class="select offset-bottom col-10">
+								<select name="#">
+									<option value="#" selected disabled hidden>биг/флс</option>
+									<option value="#">Ф</option>
+									<option value="#">Б</option>
+									<option value="#">БФ</option>
+									<option value="#">2Ф</option>
+									<option value="#">3Ф</option>
+									<option value="#">2БФ</option>
+									<option value="#">3БФ</option>
+									<option value="#">иное</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-3">брш</span>
+							<div class="select offset-bottom col-10">
+								<select name="#">
+									<option value="#" selected disabled hidden>брошюрк</option>
+									<option value="#">скрепка</option>
+									<option value="#">фр.скрепка</option>
+									<option value="#">ткл</option>
+									<option value="#">ткл м.обл</option>
+									<option value="#">ткл тв.обл</option>
+									<option value="#">пл.пруж</option>
+									<option value="#">мет.пруж</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-3">тисн</span>
+							<div class="select offset-bottom col-10">
+								<select name="#">
+									<option value="#" selected disabled hidden>тиснение</option>
+									<option value="#">сер.мат</option>
+									<option value="#">сер. гл.</option>
+									<option value="#">зол.мат.</option>
+									<option value="#">зол.гл</option>
+									<option value="#">полоса д/п</option>
+									<option value="#">иное</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-5">резка</span>
+							<div class="select offset-bottom col-8">
+								<select name="#">
+									<option value="#" selected disabled hidden>резка</option>
+									<option value="#">пп</option>
+									<option value="#">лазер</option>
+									<option value="#">гравер</option>
+									<option value="#">вырубка</option>
+									<option value="#">без резки</option>
+								</select>
+							</div>
+						</label>
+						<label class="label group align-center col-10">
+							<span class="col-10">скругл. угл</span>
+							<div class="select offset-bottom col-8">
+								<select name="#">
+									<option value="#" selected disabled hidden>скр.ул</option>
+									<option value="#">да</option>
+									<option value="#">нет</option>
+								</select>
+							</div>
+						</label>
+					</div>
+				</fieldset>
+				</div>
+				<div class="main-middle">
+					<div class="content-middle-top border-bottom">
+						<div class="arh group group-center">
+							<input type="text" class="field col-1" name="#">
+							<input type="text" class="field col-1" name="#">
+							<span>-</span>	
+							<input type="text" class="field col-1" name="#">
+							<input type="text" class="field col-1" name="#">
+							<span>арх.артк</span>
+						</div>
+					</div>
+					<div class="content-middle-bottom group group-center">
+						<div class="col-5 date-title">вход</div>
+						<div class="col-5 date-title">выход</div>
+					</div>
+				</div>
+				<div class="main-bottom group">
+					<div class="col">
+						<div class="sign-title field field--black offset-bottom">дата</div>
+						<div class="sign-title field field--black offset-bottom">время</div>
+					</div>
+					<div class="col">
+						<input type="text" placeholder="дата" class="datepicker-here sign-title field offset-bottom" data-date-format="dd/mm" data-position="bottom left">
+						<input type="text" class="timepicker sign-title field offset-bottom" placeholder="время" name="time">
+					</div>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="main-top">
+					<textarea name="description" class="textarea mh-500" placeholder="примечания: Одностроничные, либо простые док-ты заполняються верхним прямоугольником,						в многостраничном, либо сложном изделии, первый прямоугольник - это обложка, либо лицевая часть изделия. (например при кашировке), второй прямоугольник это блок,	либо оборот при кашировке и тд.">
+					</textarea>
+					<div class="fields">
+						<input type="text" name="#" class="field" data-val="vip1:" placeholder="vip1: наименов., тлщн">
+						<input type="text" name="#" class="field" data-val="vip2:" placeholder="vip2: наименов., тлщн">
+						<input type="text" name="#" class="field" data-val="vip3:" placeholder="vip3: наименов., тлщн">
+						<input type="text" name="#" class="field" data-val="vip4:" placeholder="vip4: наименов., тлщн">
+					</div>
+				</div>
+				<div class="main-middle">
+					<div class="content-middle-top row">
+						<div class="col">
+							<input type="text" name="#" placeholder="цена VIP1" class="field offset-bottom">
+							<input type="text" name="#" placeholder="цена VIP2" class="field offset-bottom">
+							<input type="text" name="#" placeholder="цена VIP3" class="field offset-bottom">
+							<input type="text" name="#" placeholder="цена VIP3" class="field offset-bottom">
+						</div>
+						<div class="col">
+							<input type="text" name="#" class="field offset-bottom" placeholder="% сепар.">
+							<input type="text" name="#" class="field offset-bottom" placeholder="% сепар.">
+							<input type="text" name="#" class="field offset-bottom" placeholder="% сепар.">
+							<input type="text" name="#" class="field offset-bottom" placeholder="% сепар.">
+						</div>
+					</div>
+					<div class="content-middle-bottom row">
+						<div class="col"><button class="button field">ошибка!</button></div>
+						<div class="col"><input type="text" name="#" placeholder="0.00" class="field offset-bottom"></div>
+					</div>
+				</div>
+				<div class="main-bottom row">
+					<div class="buttons">
+						<button class="button button--orange">начал</button>
+						<button class="button button--green">сдал</button>
+					</div>
+					<div class="info">
+						<div class="info-title">фактич.</div>
+						<div class="info-item">дата</div>
+						<div class="info-item">время</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Шелкография</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.min.css">
+	<link rel="stylesheet" href="css/datepicker.min.css">
+</head>
+<body>
+	<div class="form">
+		<div class="header">
+			<div class="header-title">формуляр строки №</div>
+			<div class="header-num">03</div>
+			<button class="button">сохранить формуляр</button>
+		</div>
+		<div class="main">
+			<div class="main-header">
+				<div class="main-header__num">03</div>
+				<div class="main-header__title">ШЛК (Шелкография)</div>
+				<button class="main-header__button button">прайс</button>
+			</div>
+			<div class="main-aside">
+				<div class="main-top">
+					<div class="row">
+						<div class="field field--black offset-bottom">визитка</div>
+						<input type="text" class="field offset-bottom" placeholder="формат готового" name="#">
+						<input type="text" class="field offset-bottom col-4" placeholder="ориг" name="#">
+						<input type="text" class="field offset-bottom col-5" placeholder="тираж ор." name="#">
+					</div>
+					<div class="group col-10 offset-bottom">
+						<span class="col-6">цветн.общ.:</span>
+						<input type="text" class="field col-4" placeholder="цветн." name="#">
+					</div>
+					<fieldset class="fieldset fieldset--light offset-bottom">
+						<div class="fieldset-title">распиновка</div>
+						<div class="group">
+							<div class="col-4 border-right">
+								<div class="select offset-bottom col-10">
+									<select name="#">
+										<option value="#" selected disabled hidden>мат.</option>
+										<option value="#">VIP1</option>
+										<option value="#">VIP2</option>
+										<option value="#">VIP3</option>
+									</select>
+								</div>
+								<input type="text" class="field offset-bottom" name="#" placeholder="пант1">
+								<input type="text" class="field offset-bottom" name="#" placeholder="пант2">
+								<input type="text" class="field offset-bottom" name="#" placeholder="пант3">
+								<input type="text" class="field offset-bottom" name="#" placeholder="пант4">
+							</div>
+							<span>+</span>
+							<div class="col-4 border-left">
+								<div class="select offset-bottom col-10">
+									<select name="material">
+										<option value="#" selected disabled hidden>мат.</option>
+										<option value="#">VIP1</option>
+										<option value="#">VIP2</option>
+										<option value="#">VIP3</option>
+									</select>
+								</div>
+								<input type="text" class="field offset-bottom" name="#" placeholder="пантА">
+								<input type="text" class="field offset-bottom" name="#" placeholder="пантБ">
+								<input type="text" class="field offset-bottom" name="#" placeholder="пантВ">
+								<input type="text" class="field offset-bottom" name="#" placeholder="пантГ">
+							</div>
+						</div>
+						<div class="group border-radius">
+							<div class="col-4 border-right">
+								<div class="select col-10">
+									<select name="#">
+										<option value="#" selected disabled hidden>лак.</option>
+										<option value="#">Лак</option>
+										<option value="#">ТП</option>
+										<option value="#">Л+Т</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-4 border-left">
+								<div class="select col-10">
+									<select name="#">
+										<option value="#" selected disabled hidden>лак.</option>
+										<option value="#">Лак</option>
+										<option value="#">ТП</option>
+										<option value="#">Л+Т</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="fieldset fieldset--dark">
+						<div class="border-radius group offset-bottom">
+							<label class="label col-6">
+								<input type="checkbox" name="#" class="checkbox">
+								Лазер
+							</label>
+							<label class="label col-6">
+								<input type="checkbox" name="#" class="checkbox">
+								П/Л
+							</label>
+						</div>
+						<label class="offset-bottom label">
+							<input type="checkbox" name="#" class="checkbox">
+							Под кашировку
+						</label>
+						<label class="offset-bottom label">
+							<input type="checkbox" name="#" class="checkbox">
+							По тонеру
+						</label>
+						<label class="offset-bottom label">
+							<input type="checkbox" name="#" class="checkbox">
+							закупка
+						</label>
+					</fieldset>
+				</div>
+				<div class="main-middle">
+					<div class="content-middle-top border-bottom">
+						<div class="arh group group-center">
+							<input type="text" class="field col-1" name="#">
+							<input type="text" class="field col-1" name="#">
+							<span>-</span>	
+							<input type="text" class="field col-1" name="#">
+							<input type="text" class="field col-1" name="#">
+							<span>арх.артк</span>
+						</div>
+					</div>
+					<div class="content-middle-bottom group group-center">
+						<div class="col-5 date-title">вход</div>
+						<div class="col-5 date-title">выход</div>
+					</div>
+				</div>
+				<div class="main-bottom group">
+					<div class="col">
+						<div class="sign-title field field--black offset-bottom">дата</div>
+						<div class="sign-title field field--black offset-bottom">время</div>
+					</div>
+					<div class="col">
+						<input type="text" placeholder="дата" class="datepicker-here sign-title field offset-bottom" data-date-format="dd/mm" data-position="bottom left">
+						<input type="text" class="timepicker sign-title field offset-bottom" placeholder="время" name="time">
+					</div>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="main-top">
+					<textarea name="description" class="textarea mh-300" placeholder="примечания"></textarea>
+					<div class="fields">
+						<input type="text" name="#" class="field" data-val="vip1:" placeholder="vip1: наименов., плтн">
+						<input type="text" name="#" class="field" data-val="vip2:" placeholder="vip2: наименов., плтн">
+						<input type="text" name="#" class="field" data-val="vip2:" placeholder="vip2: наименов., плтн">
+					</div>
+				</div>
+				<div class="main-middle">
+					<div class="content-middle-top row">
+						<div class="col">
+							<input type="text" name="price__vip-1" placeholder="цена VIP1" class="field offset-bottom">
+							<input type="text" name="price__vip-2" placeholder="цена VIP2" class="field offset-bottom">
+							<input type="text" name="price__vip-3" placeholder="цена VIP3" class="field offset-bottom">
+						</div>
+						<div class="col">
+							<input type="text" name="price__sep-1" class="field offset-bottom" placeholder="% сепар.">
+							<input type="text" name="price__sep-2" class="field offset-bottom" placeholder="% сепар.">
+							<input type="text" name="price__sep-3" class="field offset-bottom" placeholder="% сепар.">
+						</div>
+					</div>
+					<div class="content-middle-bottom row">
+						<div class="col"><button class="button field">ошибка!</button></div>
+						<div class="col"><input type="text" name="#" placeholder="0.00" class="field offset-bottom"></div>
+					</div>
+				</div>
+				<div class="main-bottom row">
+					<div class="buttons">
+						<button class="button button--orange">начал</button>
+						<button class="button button--green">сдал</button>
+					</div>
+					<div class="info">
+						<div class="info-title">фактич.</div>
+						<div class="info-item">дата</div>
+						<div class="info-item">время</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

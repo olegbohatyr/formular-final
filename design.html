@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Дизайн</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.min.css">
+	<link rel="stylesheet" href="css/datepicker.min.css">
+</head>
+<body>
+	<div class="form">
+		<div class="header">
+			<div class="header-title">формуляр строки №</div>
+			<div class="header-num">03</div>
+			<button class="button">сохранить формуляр</button>
+		</div>
+		<div class="main">
+			<div class="main-header">
+				<div class="main-header__num">03</div>
+				<div class="main-header__title">ДИЗ (Дизайн)</div>
+				<button class="main-header__button button">прайс</button>
+			</div>
+			<div class="main-aside">
+				<div class="main-top">
+					<div class="row">
+						<div class="field field--black offset-bottom">плакат</div>
+						<input type="text" class="field offset-bottom" placeholder="формат готового" name="#">
+						<input type="text" class="field offset-bottom col-4" placeholder="ориг" name="#">
+						<input type="text" class="field offset-bottom col-5" placeholder="тираж ор." name="#">
+					</div>
+					<fieldset class="fieldset fieldset--light offset-bottom">
+						<div class="fieldset-title">для одностр.либо обложка</div>
+						<div class="select offset-bottom col-10">
+							<select name="#">
+								<option value="#" selected disabled hidden>цветность</option>
+								<option value="#">4+0</option>
+								<option value="#">4+4</option>
+								<option value="#">1+0</option>
+								<option value="#">1+1</option>
+								<option value="#">без печати</option>
+							</select>
+						</div>
+						<input type="text" name="#" class="field offset-bottom" placeholder="класс матер.">
+						<input type="text" name="#" class="field offset-bottom col-6 ml-4" placeholder="материал.">
+					</fieldset>
+					<fieldset class="fieldset fieldset--dark offset-bottom">
+						<div class="fieldset-title">для многостр.-блок</div>
+						<input type="text" class="field offset-bottom" name="#" placeholder="полос (страниц)">
+						<div class="group offset-bottom col-10">
+							<span class="col-2">или</span>
+							<input type="text" name="#" class="field" placeholder="тир.лст/1шт">
+						</div>
+						<div class="select offset-bottom ml-4 col-6">
+							<select name="#">
+								<option value="#" selected disabled hidden>цветность</option>
+								<option value="#">4+0</option>
+								<option value="#">4+4</option>
+								<option value="#">1+0</option>
+								<option value="#">1+1</option>
+								<option value="#">без печати</option>
+							</select>
+						</div>
+						<input type="text" name="#" class="field offset-bottom" placeholder="класс матер.">
+						<input type="text" name="#" class="field offset-bottom col-6 ml-4" placeholder="материал.">
+					</fieldset>
+					<fieldset class="fieldset fieldset--light offset-bottom">
+						<div class="fieldset-title">резка (метод п/п обратботки)</div>
+						<div class="select col-10">
+							<select name="#">
+								<option value="#" selected disabled hidden>резка</option>
+								<option value="#">пп</option>
+								<option value="#">плот</option>
+								<option value="#">лаз</option>
+								<option value="#">вырубка</option>
+							</select>
+						</div>
+					</fieldset>
+				</div>
+				<div class="main-middle">
+					<div class="content-middle-top border-bottom">
+						<div class="arh group group-center">
+							<input type="text" class="field col-1" name="#">
+							<input type="text" class="field col-1" name="#">
+							<span>-</span>	
+							<input type="text" class="field col-1" name="#">
+							<input type="text" class="field col-1" name="#">
+							<span>арх.артк</span>
+						</div>
+					</div>
+					<div class="content-middle-bottom group group-center">
+						<div class="col-5 date-title">вход</div>
+						<div class="col-5 date-title">выход</div>
+					</div>
+				</div>
+				<div class="main-bottom group">
+					<div class="col">
+						<div class="sign-title field field--black offset-bottom">дата</div>
+						<div class="sign-title field field--black offset-bottom">время</div>
+					</div>
+					<div class="col">
+						<input type="text" placeholder="дата" class="datepicker-here sign-title field offset-bottom" data-date-format="dd/mm" data-position="bottom left">
+						<input type="text" class="timepicker sign-title field offset-bottom" placeholder="время" name="time">
+					</div>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="main-top">
+					<textarea name="description" class="textarea mh-300" placeholder="примечания"></textarea>
+					<div class="fields">
+						<input type="text" name="#" class="field" data-val="vip1:" placeholder="vip1: наименов., плтн">
+						<input type="text" name="#" class="field" data-val="vip2:" placeholder="vip2: наименов., плтн">
+						<input type="text" name="#" class="field" data-val="vip2:" placeholder="vip2: наименов., плтн">
+					</div>
+				</div>
+				<div class="main-middle">
+					<div class="content-middle-bottom border-top row">
+						<div class="col"><button class="button field">ошибка!</button></div>
+						<div class="col"><input type="text" name="#" placeholder="0.00" class="field offset-bottom"></div>
+					</div>
+				</div>
+				<div class="main-bottom row">
+					<div class="buttons">
+						<button class="button button--orange">начал</button>
+						<button class="button button--green">сдал</button>
+					</div>
+					<div class="info">
+						<div class="info-title">фактич.</div>
+						<div class="info-item">дата</div>
+						<div class="info-item">время</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
